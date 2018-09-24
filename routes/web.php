@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'IndexController');
+Route::get('/league/generate', 'LeagueController@generate');
+Route::get('/team/generate',  'TeamController@generate');
+Route::post('/division/generate', 'DivisionController@generate');
+Route::post('/score/division', 'ScoreController@division');
+Route::post('/score/finals', 'ScoreController@finals');
