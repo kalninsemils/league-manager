@@ -160,6 +160,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        App\Providers\LeagueServiceProvider::class,
+        App\Providers\TeamServiceProvider::class,
+        App\Providers\DivisionServiceProvider::class,
+
     ],
 
     /*
